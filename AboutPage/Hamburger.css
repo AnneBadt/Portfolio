@@ -1,0 +1,138 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header21 {
+    background-color: #50BC87;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    min-height: 87px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    background-color: #000000;
+    position: relative;
+    z-index: 3;
+    
+
+}
+/* I can't put display: none */
+.nav-menu {
+    font-family: 'Red Hat Text', sans-serif;
+    letter-spacing: .25px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    z-index: 1000;
+    position: absolute;
+   
+}
+
+.nav-branding {
+    font-size: 2rem;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+.nav-link:hover {
+color: #50BC87;
+}
+/* not sure this works */
+.nav-link:focus {
+    color: #EE4423;
+    }
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    
+}
+/* this is the x in the corner */
+.bar {
+    display: block;
+    width: 27px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+@media(max-width: 1060px) {
+    .hamburger {
+        display: block;
+    }
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+/* may not want this fixed */
+.nav-menu {
+position: flex;
+left: -100%;
+top: 87px;
+gap: 0px;
+flex-direction: column;
+background-color: black;
+width: 100%;
+text-align: center;
+transition: 0.3s;
+offset-distance: 1070px;
+
+}
+
+.nav-item {
+    margin: 30px 0;
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+
+
+
+}
+
+
+.disapear {
+    display: block;
+    
+  }
+  
+  .appear {
+    display: block;
+  }
+
+  @media (min-width: 1060px) {
+    .nav-item {
+        position: block;
+        visibility: hidden;
+    }
+  }
+ 
+ 

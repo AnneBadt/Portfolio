@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.containerMenu {
+  /* get rid of display: flex */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 17px;
+}
+
+.button {
+  font-family: "Red Hat display", sans-serif;
+  color: #00708a;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 3.3;
+  letter-spacing: 0.75px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* selected link */
+.button .hover {
+  color: #50bc87;
+  font-weight: 600;
+}
+
+/* top orange logo (needs to be centered) */
+.logo {
+  padding-right: 30px;
+  padding-left: 30px;
+  position: relative;
+  display: flex;
+  top: -54px;
+  z-index: 4;
+}
+
+
+.centerWords {
+  display: block;
+  width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Header 1 Anne Badt (needs to be moved up)*/
+.header1{
+  font-family: 'Red Hat Text', sans-serif;
+  color: #00708A;
+  font-weight: 400;
+  font-size: 50px;
+  letter-spacing: .25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  top: -50px;
+  text-align: center;
+  width: 100%;
+  
+  }
+
+.p1 {
+  font-family: "Red Hat Text", sans-serif;
+  color: #888888;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.75px;
+  margin: 0 auto !important;
+  max-width: 25ch;
+  text-align: center;
+  position: relative;
+  top: -50px;
+}
+
+.description {
+  font-family: "Red Hat Text", sans-serif;
+  color: #888888;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.75px;
+  margin: 0 auto !important;
+  text-align: center;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 170px;
+  max-width: 300px;
+}
+
+.descriptionLandscape {
+  font-family: "Red Hat Text", sans-serif;
+  color: #888888;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.75px;
+  margin: 0 auto !important;
+  text-align: center;
+  position: relative;
+  padding-top: 30px;
+  max-width: 300px;
+}
+
+.findList {
+  font-family: "Red Hat Text", sans-serif;
+  color: #888888;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.75px;
+  margin: 0 auto !important;
+  text-align: center;
+  position: relative;
+  padding-top: 30px;
+  max-width: 300px;
+}
+
+.warning {
+  font-family: "Red Hat Text", sans-serif;
+  color: #888888;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.75px;
+  margin: 0 auto !important;
+  text-align: center;
+  position: relative;
+  max-width: 300px;
+  padding-bottom: 170px;
+  padding-top: 10px;
+}
+
+/* fit screen images*/
+.myImage {
+  background-image: url(./images/2023.png);
+  margin: 1em auto;
+  background-size: 100% 100%;
+}
+
+.disappear3 {
+  display: block;
+}
+
+.appear3 {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .myImage {
+    background-image: url(./images/tree.png);
+  }
+
+  .disappear3 {
+    display: none;
+  }
+
+  .appear3 {
+    display: block;
+  }
+}
+
+.tacos {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 300px;
+}
+
+.lion {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  object-fit: contain;
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.description {
+  font-family: "Red Hat Text", sans-serif;
+  color: #888888;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.75px;
+  margin: 0 auto !important;
+  /* inline-size: 300px; */
+  overflow-wrap: break-word;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 200px;
+}
+
+
+
+.img-magnifier-container {
+  position: relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #ffffff;
+
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 200px;
+  height: 200px;
+}
+
+.disapear4 {
+  display: block;
+}
+
+.appear4 {
+  display: block;
+}
+
+@media (max-width: 500px) {
+  .warning {
+    position: block;
+    visibility: hidden;
+  }
+}
+
+.proclamation {
+  font-family: "Red Hat Text", sans-serif;
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 12px;
+  letter-spacing: 0.75px;
+  margin: 0 auto !important;
+  text-align: center;
+  position: relative;
+  padding-top: 30px;
+  /* max-width: 300px; */
+  padding-bottom: 25px;
+  background-color: #888888;
+  /*
+  text-transform: uppercase;
+  */
+}
+
+.button:focus {
+  color: #ee4423;
+}
+
+/*
+.containerBottom {
+  height: 150px;
+  background-color: #888888;
+  width: 100%;
+}
+*/
+
+.container {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+}
+
+
+@media (max-width: 1061px) {
+  .disappearMenu {
+      display: none;
+  }
+}
+
+.logoBox {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  justify-content: center;
+  top: -54px;
+
+}
+
+.logoSmall {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  z-index: 4;
+ 
+}
+
+@media (min-width: 1061px) {
+  .disappear6 {
+      display: none;
+  }
+}
+
+
+@media (min-width: 1061px) {
+  .header1 {
+      left: 10px;
+  }
+}
+
+@media (max-width: 418px) {
+  .header1 {
+    font-size: 35px;
+    letter-spacing: .25px;
+  }
+}  
+
+
+@media (max-width: 418px) {
+  .logoShrink {
+  height: 100px;
+  width: 100px;
+  margin-top: 8px;
+  }
+}
+
